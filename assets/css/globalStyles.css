@@ -1,0 +1,491 @@
+body {
+	margin: 0;
+}
+
+/*
+	Navigation Bar Styling
+*/
+
+header {
+
+	/* Color Attributes */
+	color: gray;
+
+	/* Display Attributes */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2% 5% 1% 5%;
+
+	/* Dimension Attributes */
+}
+
+#logo-and-course {
+
+	/* Display Attributes */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+
+}
+
+#logo {
+	/* Alignment Attributes */
+	text-align: center;
+
+	/* Dimension Attributes */
+	width: 70px;
+	height: 70px;
+}
+
+#course {
+	/* Display Attributes */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	/* Typographic Attributes */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #5a5a5a;
+}
+
+#navigation-bar {
+
+	/* Display Attributes */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.navigation-bar-button {
+
+	/* Color Attributes */
+	color: #5a5a5a;
+
+	/* Spacing Attributes */
+	padding: 10px;
+	margin-left: 10px;
+
+	/* Display Attributes */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	/* Typography Properties */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.navbar-button-text:after {
+	/* Purely for underline transition */
+	content: '';
+	height: 1px;
+	width: 100%;
+	display: block;
+	background: #669cff;
+	transition: 250ms;
+	transform: scaleX(0);
+}
+
+.navbar-button-text:hover:after {
+	transform: scaleX(1);
+}
+
+
+/*
+	Dashboard Styling
+*/
+
+#dashboard {
+	/* Display Attributes */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+}
+
+.dashboard-card {
+
+	/* Border Attributes */
+	border-radius: 5px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #cecece;
+
+	/* Display Attributes */
+	display: flex;
+	flex-direction: column;
+	padding: 20px 15px 10px 15px;
+
+	/* Dimesion Attributes */
+	height: 70vh;
+	width: 25vw;
+
+	/* Animation Attributes */
+	animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.dashboard-card-header {
+
+	/* Typograhic Attributes */
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	color: #2495ff;
+
+	margin-bottom: 4vh;
+}
+
+.dashboard-card-content {
+
+	/* Overflow Attributes */
+	overflow: scroll;
+
+	/* Display Attributes */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	/* Background Attributes */
+	background: linear-gradient(rgba(255,0,0,0), white);
+}
+
+.dashboard-card-content::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+/*
+	Updates Styling
+*/
+
+.update-card {
+
+	/* Border Attributes */
+	border-radius: 5px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #cecece;
+
+	/* Spacing Attributes */
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+
+.update-card-header {
+
+	/* Typograhic Attributes */
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #2495ff;
+
+	/* Spacing Attributes */
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+
+.update-card-icon-and-title {
+
+	/* Display  Attributes */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.update-card-title {
+
+	/* Overflow Attributes */
+	overflow: hidden;
+	white-space: nowrap;
+
+	/* Typography Attributes */
+	color: #005FE2;
+}
+
+.update-urgent {
+	height:18px;
+	width: 18px;
+	margin-right: 7px;
+}
+
+.update-card-timestamp {
+
+	/* Typograhic Attributes */
+	font-size: 11px;
+	font-family: 'Roboto', sans-serif;
+	color: #828282;
+
+	/* Spacing Attributes */
+	margin-top: 5px;
+
+}
+
+.update-card-content {
+
+	/* Typograhic Attributes */
+	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+	color: #828282;
+	text-align: justify;
+
+	/* Spacing Attributes */
+	padding-left: 5px;
+	padding-right: 5px;
+
+	/* Overflow Attribute */
+	white-space: normal
+}
+
+.update-card-expand-button {
+	
+	/* Border Attributes */
+	border-color: white;
+	border-radius: 5px;
+
+	/* Typograhic Attributes */
+	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+	color: #4D8CE3;
+
+	/* Spacing Attributes */
+	padding: 3px 5px 3px 5px;
+
+	transition: 250ms;
+
+}
+
+.update-card-expand-button:hover {
+	transition: 250ms;
+	background: #4D8CE3;
+	color: white;
+}
+
+.update-card-expand-button:focus {
+	outline: 0;
+}
+
+/*
+	Day Schedule Styles
+*/
+
+.day-schedule-card {
+
+	/* Background Attributes */
+	background: #4993f9;
+
+	/* Display Attributes */
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+
+	/* Spacing Attributes */
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 15px;
+
+	/* Border Attributes */
+	border-radius: 5px;
+}
+
+.day-schedule-header {
+
+	/* Typographic Attributes */
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #707070;
+
+	/* Spacing Attributes */
+	margin-bottom: 10px;
+}
+
+.day-schedule-card-header {
+
+	/* Typographic Attributes */
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: white;
+
+}
+
+.day-schedule-card-name {
+	/* Alignment Attributes */
+	line-height: 3vh;
+}
+
+.day-schedule-card-location {
+
+	/* Typographic Attributes */
+	font-size: 10px;
+
+}
+
+.day-schedule-card-time {
+
+	/* Typographic Attributes */
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: white;
+
+	/* Display Attributes */
+	text-align: center;
+	line-height: 5vh;
+
+}
+
+
+/*
+	Week Schedule Styles
+*/
+
+.week-schedule-section-card {
+
+	/*.Display Attributes */
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+
+	/* Dimension Attributes */
+	min-height: 75px;
+
+	/* Border Attributes */
+	border: solid;
+	border-color: #BCBCBC;
+	border-width: .5px;
+	border-radius: 5px;
+
+	/* Spacing Attributes */
+	margin-bottom: 10px;
+
+}
+
+.week-schedule-section-card-number-container {
+
+	/* Spacing Attributes */
+	width: 8%;
+
+	/* Color Attributes */
+	background: #4D8CE3;
+
+	/* Typography Attributes */
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+
+}
+
+.week-schedule-section-header {
+
+	/* Typography Attributes */
+	color: #707070;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	margin-bottom: 10px
+
+}
+
+.week-schedule-section-content {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.week-schedule-section-card-number {
+	position: relative;
+	left: 15%;
+	top: 40%;
+}
+
+.week-schedule-section-card-content {
+
+	padding: 10px 5px 5px 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;	
+
+}
+
+.section-title {
+
+	/* Typography Attributes */
+	color: #005FE2;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+
+}
+
+.section-subtitle {
+
+	/* Typography Attributes */
+	color: #070707;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+
+}
+
+.live-link-wrapper {
+	display: inline-block;
+}
+
+.live-link {
+
+	/* Typography Attributes */
+	color: #4D8CE3;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+
+	display: inline-block;
+
+}
+
+.live-link:after {
+	/* Purely for underline transition */
+	content: '';
+	height: 1px;
+	display: block;
+	background: #4D8CE3;
+	transition: 250ms;
+	transform: scaleX(0);
+}
+
+.live-link:hover:after {
+	transform: scaleX(1);
+}
+
+.dead-link {
+
+	/* Typography Attributes */
+	color: #BCBCBC;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+
+}
+
+.links {
+
+	padding-top: 5px;
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
