@@ -2,6 +2,16 @@ body {
 	margin: 0;
 }
 
+a {
+
+	text-decoration: none;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: #5a5a5a;
+
+}
+
 #logo-and-course {
 
 	/* Display Attributes */
@@ -157,6 +167,10 @@ body {
 
 	color:#4993f9;
 
+}
+
+.welcome-page-nav-card:hover a {
+	color:#4993f9;
 }
 
 .welcome-page-nav-card-image {
