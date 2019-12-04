@@ -43,7 +43,7 @@ body {
 	font-size: 36px;
 	color: #5a5a5a;
 
-	animation: fadeIn 1s ease-in;
+	animation: fadeIn 1.5s ease-out;
 
 }
 
